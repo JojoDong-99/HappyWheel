@@ -1,0 +1,430 @@
+h2
+{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 300%;
+}
+
+input[type=text], input[type=password], input[type=date], textarea
+{
+    width: 100%;
+    height: 40px;
+    padding: 6px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-sizing: border-box;
+    margin: 8px 0 8px 0;
+}
+/*
+#createButton
+{
+    background-color: #0059ab;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 8px 0;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 70%;
+    font-size: 120%;
+    transition: 0.4s;
+}
+*/
+
+#createButton:hover
+{
+    background-color: #ce2900;
+    opacity: 0.8;
+}
+
+.accountImage
+{
+    text-align: center;
+    width: 50%;
+    margin: 25px auto auto auto;
+}
+
+img.avatar
+{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container
+{
+    padding: 16px;
+    display: block;
+    margin: auto;
+
+
+    display: grid;
+    grid-template-columns: 3fr 7fr 3fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+            ". file ."
+            ". fileChoice ."
+            ". username ."
+            ". password ."
+            ". firstname ."
+            ". lastname ."
+            ". birthday ."
+            ". description ."
+            ". infoEnsure ."
+            ". button .";
+}
+
+.mainBody
+{
+    display: block;
+    align-content: center;
+}
+
+.content-file
+{
+    grid-area: file;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.content-file-choice
+{
+    grid-area: fileChoice;
+    margin-top: 4%;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+
+.content-username
+{
+    grid-area: username;
+    margin-top: 2%;
+}
+
+.content-password
+{
+    grid-area: password;
+    margin-top: 2%;
+}
+.content-firstname
+{
+    grid-area: firstname;
+    margin-top: 2%;
+}
+.content-lastname
+{
+    grid-area: lastname;
+    margin-top: 2%;
+}
+.content-birthday
+{
+    grid-area: birthday;
+    margin-top: 2%;
+}
+.content-description
+{
+    grid-area: description;
+    margin-top: 2%;
+}
+.content-button
+{
+    grid-area: button;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.content-final-ensure
+{
+    grid-area: infoEnsure;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+#briefDescription
+{
+    height: 120px;
+    margin-top: 2%;
+}
+
+#password
+{
+    margin-bottom: 1%;
+}
+
+#passwordCheck
+{
+    margin-top: 0px;
+}
+
+#storeAvatar
+{
+    display: none;
+    /*visibility: hidden;*/
+}
+
+.store-userId
+{
+    display: none;
+    /*visibility: hidden;*/
+}
+
+.userAccount
+{
+    display: none;
+    /*visibility: hidden;*/
+}
+
+#infoEnsure
+{
+    display: initial;
+}
+
+
+/* Center the image and position the close button */
+.closingImg
+{
+    position: relative;
+}
+
+/* The Modal (background) */
+.modal
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content
+{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 50px;
+    width: 55%; /* Could be more or less, depending on screen size */
+    height: auto;
+}
+
+/* The Close Button (x) */
+.close
+{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 1px;
+    margin-top: 10px;
+}
+
+.close:hover, .close:focus
+{
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate
+{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+input#avatar1[type=checkbox] + label, input#avatar2[type=checkbox] + label, input#avatar3[type=checkbox] + label, input#avatar4[type=checkbox] + label
+{
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    cursor: pointer;
+}
+
+input#avatar1[type=checkbox]:checked + label, input#avatar2[type=checkbox]:checked + label, input#avatar3[type=checkbox]:checked + label, input#avatar4[type=checkbox]:checked + label
+{
+    border-color: red;
+    border-style: solid;
+    height: 150px;
+    width: 150px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    cursor: pointer;
+}
+
+input#avatar1[type=checkbox] + label:hover, input#avatar2[type=checkbox] + label:hover, input#avatar3[type=checkbox] + label:hover, input#avatar4[type=checkbox] + label:hover
+{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+
+input[type=checkbox] {
+    display:none;
+}
+
+input#avatar1[type=checkbox] + label
+{
+    background-image: url("../images/image-avatar-1.jpg");
+}
+
+input#avatar2[type=checkbox] + label
+{
+    background-image: url("../images/image-avatar-2.jpg");
+}
+
+input#avatar3[type=checkbox] + label
+{
+    background-image: url("../images/image-avatar-3.jpg");
+}
+
+input#avatar4[type=checkbox] + label
+{
+    background-image: url("../images/image-avatar-4.jpg");
+}
+
+.imagesSet
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.selectFile
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h3
+{
+    text-align: center;
+}
+
+.changingSubmit
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.selectFile label
+{
+    margin-left: 7%;
+    font-size: 120%;
+}
+
+#changing
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+#myFile
+{
+    font-size: 100%;
+    margin-left: 2%;
+}
+
+.userName
+{
+    display: none;
+    /*visibility: hidden;*/
+}
+
+#currentAvatar, #currentUsername
+{
+    display: none;
+}
+
+#deleteAccountDiv
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#deleteAccountButton
+{
+    padding: 10px;
+    font-size: 90%;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: red;
+    color: wheat;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#deleteAccountButton:hover
+{
+    opacity: 0.7;
+}
+
+
+@media only screen and (max-width: 900px)
+{
+    h2
+    {
+        font-size: 250%;
+        margin-top: 8%;
+    }
+
+    .container
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+                "file"
+                "fileChoice"
+                "username"
+                "password"
+                "firstname"
+                "lastname"
+                "birthday"
+                "description"
+                "infoEnsure"
+                "button";
+    }
+}
+
+#createButton
+{
+    padding: 5px;
+    width: 30%;
+    font-size: 200%;
+}
