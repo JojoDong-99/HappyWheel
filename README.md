@@ -3,8 +3,6 @@ This is the final project for the PGCIT program of University of Auckland. Happy
 ## Introduction
 HappyWheel is a blog website, where you can post articles and communicate with others. It allows users to create and management their accounts, posting articles, commenting on articles and on other comments, browse others personal page and more. 
 
--  This project is used to be deployed on https://trex-sandwich.com/wakko_GroupDeployment/
-
 ### Brief instruction for using Happy Wheel blog system:
 
 1. At the beginning, Happy Wheel will display a list of article that store in database. Each article has hyper link on title and author that allow user to click. User can't do anything until they click login button that on nav bar. If user don't have account, they also can create one.
