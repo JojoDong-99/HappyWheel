@@ -1,14 +1,9 @@
-# PGCertIT Final Project - A Personal Blogging System
+# HappyWheel
+HappyWheel is a blog system created in a team of three. This is the final project for the PGCIT program of University of Auckland.
+## Introduction
+- HappyWheel is a blog website, where you can post articles and communicate with others. It allows users to create and management their accounts, posting articles, commenting on articles and on other comments, browse others personal page and more. 
 
-**TODO:** Include some information about your team's project within this README. The following information must be included:
-
-- Team name: Happy Wheel
-
-- Website URL: https://trex-sandwich.com/wakko_GroupDeployment/
-
-- Extra features: Advanced, nested comments
-
-- Test Accounts ( username/password ): abc/123, Jack/123
+-  This project is used to be deployed on https://trex-sandwich.com/wakko_GroupDeployment/
 
 - Brief instruction for using Happy Wheel blog system:
     1. At the beginning, Happy Wheel will display a list of article that store in database. Each article has hyper link on title and author that allow user to click. User can't do anything until they click login button that on nav bar. If user don't have account, they also can create one.
@@ -24,3 +19,5 @@
     6. Fourth, if user want to go back to their personal homepage, they can click on "My Page" button and Happy Wheel will redirect to personal homepage.
     
     7. Finally, user can click "Log Out" button to leave and Happy Wheel will redirect to the page that display a list of article.
+  
+## Tech Stack
